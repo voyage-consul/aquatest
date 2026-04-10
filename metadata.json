@@ -1,0 +1,5 @@
+{
+  "name": "LINE Marketing Dashboard",
+  "description": "LステップのCSVデータから分析ダッシュボードを生成するツール",
+  "requestFramePermissions": []
+}

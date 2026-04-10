@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body { 
+  font-family: 'Noto Sans JP', sans-serif; 
+  background: #f8f9fb;
+  min-height: 100vh; 
+  color: #1e293b;
+}
+/* 明朝体：タイトル・KPI数値・セクション見出し */
+.font-serif { font-family: 'Noto Serif JP', serif; }
+/* 白背景上のガラスカード */
+.glass { 
+  background: rgba(255, 255, 255, 0.85); 
+  backdrop-filter: blur(16px); 
+  -webkit-backdrop-filter: blur(16px); 
+  border: 1px solid rgba(0, 0, 0, 0.06); 
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.04); 
+}
+.card-hover { transition: all 0.3s ease; position: relative; }
+.card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); border-color: rgba(0,0,0,0.1); z-index: 50; }
+/* セクションラベル（OVERVIEW のような英字ラベル） */
+.section-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.15em; 
+  text-transform: uppercase; color: #94a3b8;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.4); border-radius: 10px; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fadeIn { animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
